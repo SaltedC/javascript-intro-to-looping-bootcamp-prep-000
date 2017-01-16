@@ -14,3 +14,26 @@ function forLoop(array) {
   }
   return array;
 }
+
+function whileLoop(number) {
+  //console.log countdown from passed number to 0
+  //return string 'done'
+  while (number > 0) {
+    console.log(--number)
+  }
+  return 'done'
+}
+
+function maybeTrue() {
+  return Math.random() >= 0.5
+}
+
+function doWhileLoop(array) {
+  //removes elements from `array` until `array` is empty or until `maybeTrue()`
+  //returns `false`
+  do {
+    //loopbody
+    array.pop()
+  } while (maybeTrue())
+  return array;
+}
